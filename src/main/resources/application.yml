@@ -1,0 +1,14 @@
+spring:
+  datasource:
+#    url: jdbc:mysql://localhost:5432/web #Нужно указать вашу БД
+    url: jdbc:postgresql://localhost:5434/postgres_pol #Нужно указать вашу БД
+    username: postgres # пользователь который указат у вас при создании БД
+    password: qqqwwweee12321 # пароль который указат у вас при создании БД
+#    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: org.postgresql.Driver
+    initialization-mode: never
+  thymeleaf:
+    cache: false
+
+server:
+  port: 8080
